@@ -35,7 +35,7 @@ $myyellow: #EAF9D9;
     overflow: hidden;
     justify-content: center;
     background-repeat: no-repeat;
-    z-index: 2;
+    z-index: 1;
 }
 @media (max-width: 2000px) { 
     .capybaracontainer {
@@ -109,7 +109,15 @@ $myyellow: #EAF9D9;
     }
     .capybaracontainer {
         width: 95%;
-        background-position: -1rem;
+        background-position: -3rem 14rem;
+    }
+    .steam {
+        width: 0;
+        height: 0;
+        visibility: hidden !important;
+    }
+    .steam:before {
+        visibility: hidden !important;
     }
 }
 .hometitle {
@@ -130,4 +138,32 @@ $myyellow: #EAF9D9;
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 1rem;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.steam{
+    position: absolute;
+    top: 20vmin;
+    left: 46vmin;
+    width: 0.5%;
+    height: 2vmin;
+    color: $darkblue;
+    border-radius: 50%;
+    animation: 3s steam infinite ease-in-out alternate;
+}
+.steam:before {
+    content: "okay I pull up";
+    position: absolute;
+    right: 10%;
+    opacity: .4;
+    width: 20rem;
+    height: 20rem;
+}
+
+@keyframes steam {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.8;
+    }
 }
