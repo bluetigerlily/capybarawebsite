@@ -1,22 +1,54 @@
 //font-family: 'Poppins', sans-serif;
 
+$darkblue: #0c3483;
+$lightblue: #a2b6df;
+$paleblue: #6b8cce;
+$myyellow: #EAF9D9;
 
+
+.homeoutercontainer {
+    background: linear-gradient(-45deg, $darkblue, $lightblue, $paleblue);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .homecontainer {
     display: flex;
     background-image: url('../../assets/capybarafrontpage.png');
     background-size: contain;
-    height: 93vh;
+    height: 95.2vh;
     width: 95%;
     background-position: -20%;
     overflow: hidden;
+    justify-content: center;
     background-repeat: no-repeat;
 }
 .hometitle {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 35rem;
+    margin-top: 2%;
+    margin-left: 30%;
+    height: 28rem;
     justify-items: center;
     align-items:center;
-    font-size: 3rem;
-    font-family: 'Poppins', sans-serif;;
+    font-size: 2.9rem;
+    color: $darkblue;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, rgba( 255, 255, 255, 0.1 )  0%, rgba( 255, 255, 255, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

@@ -1,14 +1,33 @@
 //font-family: 'Poppins', sans-serif;
-
+$darkblue: #0c3483;
+$lightblue: #a2b6df;
+$paleblue: #6b8cce;
+body {
+    margin: 0;
+    padding: 0;
+}
 .navbarcontainer {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, $darkblue, $lightblue, $paleblue);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
 }
+
+
 a {
     text-decoration: none;
+    color: $darkblue;
+    margin-left: 4rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+a:hover {
+    outline: .17rem solid $darkblue;
+    outline-offset: -.18rem;
 }
 .linkcontainer {
     display: flex;
