@@ -10,6 +10,8 @@ $myyellow: #EAF9D9;
     background: linear-gradient(-45deg, $darkblue, $lightblue, $paleblue);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
+    height: 95.2vh;
+
 }
 @keyframes gradient {
 	0% {
@@ -22,23 +24,100 @@ $myyellow: #EAF9D9;
 		background-position: 0% 50%;
 	}
 }
-.homecontainer {
+.capybaracontainer {
     display: flex;
-    background-image: url('../../assets/capybarafrontpage.png');
+    background-image: url('../../assets/capybaraintub.png');
     background-size: contain;
-    height: 95.2vh;
-    width: 95%;
-    background-position: -20%;
+    min-height: 95.2vh;
+    width: 100%;
+    position: absolute;
+    background-position: -25% 10rem;
     overflow: hidden;
     justify-content: center;
     background-repeat: no-repeat;
+    z-index: 2;
+}
+@media (max-width: 2000px) { 
+    .capybaracontainer {
+        width: 100%;
+        background-position: -10rem 20rem;
+    }
+    .hometitle {
+        max-width: 30rem !important;
+        font-size: 2rem !important;
+        max-height: 20rem !important;
+        margin-left: 50% !important;
+        margin-top: 4% !important;
+    }
+}
+@media (max-width: 1400px) { 
+    .capybaracontainer {
+        width: 100%;
+        background-position: -1rem 20rem;
+    }
+}
+@media (max-width: 1300px) { 
+
+    .hometitle {
+        max-width: 25rem !important;
+        font-size: 1.3rem !important;
+        max-height: 15rem !important;
+        margin-left: 45% !important;
+        margin-top: 4% !important;
+    }
+}
+@media (max-width: 1000px) {
+    .homeoutercontainer {
+        background-size: 400% 400%;
+        height: 95.2vh;
+    }
+    .capybaracontainer {
+        width: 100%;
+        background-position: -1rem 25rem;
+    }
+    .hometitle {
+        max-width: 20rem !important;
+        font-size: 1rem !important;
+        max-height: 10rem !important;
+        margin-left: 40% !important;
+        margin-top: 8% !important;
+    }
+}
+@media (max-width: 900px) {
+    .capybaracontainer {
+        width: 100%;
+        background-position: -1rem 25rem;
+    }
+    .hometitle {
+        max-width: 15rem !important;
+        font-size: .8rem !important;
+        max-height: 8rem !important;
+        margin-left: 55% !important;
+        margin-top: 10% !important;
+    }
+    .capybaracontainer {
+        background-position: -1rem 13rem;
+    }
+}
+@media (max-width: 700px) {
+    .hometitle {
+        max-width: 12rem !important;
+        font-size: .8rem !important;
+        max-height: 8rem !important;
+        margin-left: 45% !important;
+        margin-top: 25% !important;
+    }
+    .capybaracontainer {
+        width: 95%;
+        background-position: -1rem;
+    }
 }
 .hometitle {
     display: flex;
     flex-direction: column;
     width: 35rem;
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 55%;
     height: 28rem;
     justify-items: center;
     align-items:center;

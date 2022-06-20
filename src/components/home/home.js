@@ -6,12 +6,14 @@ const Home = () => {
     return (
     
        <div className='homeoutercontainer'> 
-        <div className='homecontainer'>
+        <div className='capybaracontainer'>
+        </div>
+        <div className='bathtubcontainer'>      
+        </div>
             <div className='hometitle'>
                 <h1>Capybara</h1>
                 <h2>After Party</h2>
             </div>
-        </div>
        </div> 
     );
 }
