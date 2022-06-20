@@ -1,0 +1,16 @@
+//font-family: 'Poppins', sans-serif;
+
+.navbarcontainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.linkcontainer {
+    display: flex;
+    column-gap: 2rem;
+}

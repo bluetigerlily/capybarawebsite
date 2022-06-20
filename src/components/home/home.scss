@@ -1,0 +1,22 @@
+//font-family: 'Poppins', sans-serif;
+
+
+.homecontainer {
+    display: flex;
+    background-image: url('../../assets/capybarafrontpage.png');
+    background-size: contain;
+    height: 93vh;
+    width: 95%;
+    background-position: -20%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+.hometitle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items:center;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;;
+}

@@ -7,17 +7,12 @@ const Navbar = () => {
     return (
 
         <div className='navbarcontainer'>
-            <nav>
-                <div className='homecontainer'>
-                    <Link to="/">Home</Link>
-                </div>
-
-                <div className='communitycontainer'>
-                    <Link to="/Community">Community</Link>
-                </div>
-        </nav>
+            <div className='linkcontainer'>
+                <Link to="/">Home</Link>
+                <Link to="/Community">Community</Link>
+            </div>
   
-        <Outlet />
+            <Outlet />
       </div>
     );
 }

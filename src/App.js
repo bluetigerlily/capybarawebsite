@@ -9,15 +9,14 @@ import Community from './components/community/community';
 
 function App() {
   return (
-
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route index element={<Home />} />
-          <Route path="Community" element={<Community />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<Home />} />
+            <Route path="Community" element={<Community />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     
   
   );
