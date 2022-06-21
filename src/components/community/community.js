@@ -24,8 +24,10 @@ const Community = () => {
             <div className='communitycontainter'>
           
                 <div className='communitycontainercolor'>
-                
-                    <div className='communitycontainercoloraccentline'>
+                    <div className="accentline">
+                        
+                    </div>
+                    <div className='communitycontainercolorvideotitle'>
                         <video
                             className="capyvideoclass"
                             style={{ maxWidth: "100%" }}
