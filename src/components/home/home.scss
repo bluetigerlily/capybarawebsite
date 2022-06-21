@@ -6,13 +6,18 @@ $paleblue: #6b8cce;
 $myyellow: #EAF9D9;
 
 
-.homeoutercontainer {
+body {
     background: linear-gradient(-45deg, $darkblue, $lightblue, $paleblue);
     animation: gradient 15s ease infinite;
     background-size: 400% 400%;
-    height: 95.2vh;
-
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -111,12 +116,12 @@ $myyellow: #EAF9D9;
         width: 95%;
         background-position: -3rem 14rem;
     }
-    .steam {
+    .okayIpullup {
         width: 0;
         height: 0;
         visibility: hidden !important;
     }
-    .steam:before {
+    .okayIpullup:before {
         visibility: hidden !important;
     }
 }
@@ -140,7 +145,7 @@ $myyellow: #EAF9D9;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.steam{
+.okayIpullup{
     position: absolute;
     top: 20vmin;
     left: 46vmin;
@@ -150,7 +155,7 @@ $myyellow: #EAF9D9;
     border-radius: 50%;
     animation: 3s steam infinite ease-in-out alternate;
 }
-.steam:before {
+.okayIpullup:before {
     content: "okay I pull up";
     position: absolute;
     right: 10%;

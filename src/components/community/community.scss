@@ -2,3 +2,49 @@
 $darkblue: #0c3483;
 $lightblue: #a2b6df;
 $paleblue: #6b8cce;
+
+.communityoutercontainer {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 94.8vh;
+    width: 99.8%;    
+}
+.communitycontainter {
+    font-family: 'Poppins', sans-serif;
+    width: 80vw;
+    height: 85vh;
+    min-width: 5rem;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to top, rgba( 255, 255, 255, 0.1 )  0%, rgba( 255, 255, 255, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 1rem;
+}
+.communitycontainercolor {
+    width: 25vw;
+    height: 60vh;
+    border-radius: 1rem 0rem 1rem 0rem;
+    background-color: rgba(107, 140, 206, 1);
+}
+.communitycontainercoloraccentline {
+    width: 80vw;
+    height: 15vh;
+    border-bottom: .2rem solid $darkblue;
+}
+.communitycontainercapybara {
+    width: 25vw;
+    height: 10vh;
+    min-height: 6rem;
+    min-width: 5rem;
+    border-radius: 1rem 0rem 0rem 0rem;
+    color: $darkblue;
+    text-align: center;
+    padding: .1rem;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
