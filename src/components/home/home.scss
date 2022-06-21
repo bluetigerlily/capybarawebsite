@@ -16,6 +16,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -58,7 +59,7 @@ body {
 @media (max-width: 1400px) { 
     .capybaracontainer {
         width: 100%;
-        background-position: -1rem 20rem;
+        background-position: -1rem 25rem;
     }
 }
 @media (max-width: 1300px) { 
@@ -69,6 +70,10 @@ body {
         max-height: 15rem !important;
         margin-left: 45% !important;
         margin-top: 4% !important;
+    }
+    .capybaracontainer {
+        width: 100%;
+        background-position: -1rem 25rem;
     }
 }
 @media (max-width: 1000px) {
@@ -91,7 +96,7 @@ body {
 @media (max-width: 900px) {
     .capybaracontainer {
         width: 100%;
-        background-position: -1rem 25rem;
+        background-position: -1rem 19rem;
     }
     .hometitle {
         max-width: 15rem !important;
@@ -99,9 +104,6 @@ body {
         max-height: 8rem !important;
         margin-left: 55% !important;
         margin-top: 10% !important;
-    }
-    .capybaracontainer {
-        background-position: -1rem 13rem;
     }
 }
 @media (max-width: 700px) {
@@ -114,7 +116,7 @@ body {
     }
     .capybaracontainer {
         width: 95%;
-        background-position: -3rem 14rem;
+        background-position: -3rem 19rem;
     }
     .okayIpullup {
         width: 0;
