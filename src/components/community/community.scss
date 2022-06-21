@@ -23,18 +23,14 @@ $paleblue: #6b8cce;
     border-radius: 1rem;
 }
 .communitycontainercolor {
-    width: 25vw;
+    width: 30vw;
     height: 60vh;
     border-radius: 1rem 0rem 1rem 0rem;
     background-color: rgba(107, 140, 206, 1);
 }
-.communitycontainercoloraccentline {
-    width: 80vw;
-    height: 15vh;
-    border-bottom: .2rem solid $darkblue;
-}
+
 .communitycontainercapybara {
-    width: 25vw;
+    width: 30vw;
     height: 10vh;
     min-height: 6rem;
     min-width: 5rem;
@@ -42,9 +38,18 @@ $paleblue: #6b8cce;
     color: $darkblue;
     text-align: center;
     padding: .1rem;
-    padding-top: 2%;
-    padding-bottom: 2%;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 4vw;
+
+}
+.capyvideoclass {
+    height: 20vh;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 25vw;
+    border-radius: 1rem;
+    margin: 1rem 2.5vw;
+    outline: .25rem solid $darkblue;
 }
