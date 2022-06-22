@@ -32,7 +32,6 @@ body {
 }
 .capybaracontainer {
     display: flex;
-    background-image: url('../../assets/capybarabathtubsunglasses.png');
     background-size: contain;
     min-height: 95.2vh;
     width: 100%;
@@ -219,4 +218,23 @@ body {
     to{
         opacity: 0.8;
     }
+}
+
+.partybutton {
+    background-color: $darkblue;
+    color: $lightblue;
+    border-radius: 10%;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3rem;
+    font-size: 1rem;
+    padding: .2rem;
+    cursor: pointer !important;
+}
+.partybutton:hover {
+    color: $darkblue;
+    background-color: lightblue;
 }

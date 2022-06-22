@@ -105,10 +105,11 @@ $paleblue: #6b8cce;
     align-items: center;
     text-align: center;
     margin: 1rem;
-    font-size: smaller;
-    padding: 30%;
-    
+    width: 12rem;
+    font-size: 1rem;
+    padding-right: 20%;
 }
+
 .capybarabutton {
     background-image: url('../../assets/capybaraclicker.png');
     background-repeat: no-repeat;
@@ -117,11 +118,49 @@ $paleblue: #6b8cce;
     background-size: contain;
     border-radius: 1rem;
     cursor: pointer;
-    border: .15rem solid $darkblue;
-
 }
 
 .capybarabutton:active , .capybarabutton:hover {
-    border: .15rem solid $darkblue;
     background-color: $paleblue;
+}
+.box {
+    animation: wobble 1s ease infinite;
+}
+.box:hover {
+    animation: none;
+}
+
+
+@keyframes wobble {
+    0%, 100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-32px) rotate(-10deg);
+        transform: translateX(-32px) rotate(-10deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(calc(32px / 2)) rotate(10deg);
+        transform: translateX(calc(32px / 2)) rotate(10deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+        transform: translateX(calc(-32px / 2)) rotate(calc(-10deg / 1.8));
+    }
+
+    60% {
+        -webkit-transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+        transform: translateX(calc(32px / 3.3)) rotate(calc(10deg / 3));
+    }
+
+    75% {
+        -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+        transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
+    }
 }

@@ -3,6 +3,7 @@ import './community.scss';
 import capyvideo from '../../assets/Capybaras pull up.mp4';
 import ClickerGame from "./clickergame";
 
+
 const Community = () => {
     
     const [isStarted, setIsStarted] = useState(true);
@@ -23,6 +24,8 @@ const Community = () => {
     useEffect(() => {
       attemptPlay();
     }, []);
+
+  
     return (
 
         <div className='communityoutercontainer'>
@@ -30,6 +33,7 @@ const Community = () => {
             <div className='communitycontainter'>
 
                 <div className='communitycontainercolor'>
+
                     <div className='communitycontainercolorvideotitle'>
                         <video
                             className="capyvideoclass"
@@ -53,12 +57,13 @@ const Community = () => {
                             type="button"
                             onClick={handleClick}
                             >
-                            Start
+                            {isStarted ? 'Start' : 'Stop'}
                         </button>
                     </div>
 
+
                 </div>
-                {isStarted ? '' : <ClickerGame />}
+                {isStarted ? '' :  <ClickerGame /> }
 
             </div>
         </div>
