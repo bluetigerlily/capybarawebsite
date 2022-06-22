@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useReducer } from 'react';
 
 import { reducer, initialState } from './reducer';
 import Clicker from './Clicker';
-import Autoclicker from './Autoclicker.';
 
 const ClickerGame = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
