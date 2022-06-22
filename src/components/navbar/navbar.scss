@@ -22,6 +22,7 @@ a {
 a:hover {
     outline: .17rem solid $darkblue;
     outline-offset: -.18rem;
+    border-radius: 1rem;
 }
 .linkcontainer {
     display: flex;
