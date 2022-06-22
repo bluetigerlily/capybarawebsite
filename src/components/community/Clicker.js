@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Clicker = ({ amount, dispatch }) => (
+const Clicker = () => {
+  const [count, setCount] = useState(0);
+  
+  return (
   <div className="clickercontainer">
-    <p>Capys'Bacardi'd: {amount}</p>
+    <p>Capys'Bacardi'd: {count}</p>
     
     <div
       className="capybarabutton box"
-      onClick={() => dispatch({ type: 'click' })}
+      onClick={() => setCount(count+1)}
     >
     </div>
 
   </div>
-);
+  );
+  };
 
 export default Clicker;

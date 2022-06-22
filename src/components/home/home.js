@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './home.scss';
 import MyBackgroundImage from '../../assets/capybarabathtubsunglasses.png';
 import PartyTimeImage from '../../assets/partyreadycapybara.png';
+import DiscoBall from '../../assets/disco-ball.png';
+
 const Home = () => {
 
     const [isPartyTime, setIsPartyTime] = useState(true);
@@ -24,7 +26,7 @@ const Home = () => {
         </div>)}
         <div className='okayIpullup'></div>
        
-            <div className='hometitle'>
+        {isPartyTime ? (<div className='hometitle'>
                 <h1>Capybara</h1>
                 <h2>After Party</h2>
 
@@ -35,7 +37,23 @@ const Home = () => {
                         >
                     {isPartyTime ? `Party Time` : `After Party`}
                 </button>
-            </div>
+            </div>) : (<div className='hometitle' style= {{
+             backgroundImage: `url(${DiscoBall})`,
+             backgroundRepeat: 'no-repeat',
+             backgroundSize: 'cover',
+             animation: 'hue infinite alternate linear 1s',
+        }}>
+                <h1>Capybara</h1>
+                <h2>After Party</h2>
+
+                <button 
+                        className="partybutton"
+                        type="button"
+                        onClick={handleClickParty}
+                        >
+                    {isPartyTime ? `Party Time` : `After Party`}
+                </button>
+            </div>) }
            
        </div> 
        </>

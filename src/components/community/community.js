@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import './community.scss';
 import capyvideo from '../../assets/Capybaras pull up.mp4';
-import ClickerGame from "./clickergame";
+import Clicker from "./Clicker";
 
 
 const Community = () => {
@@ -63,7 +63,7 @@ const Community = () => {
 
 
                 </div>
-                {isStarted ? '' :  <ClickerGame /> }
+                {isStarted ? '' :  <Clicker /> }
 
             </div>
         </div>
