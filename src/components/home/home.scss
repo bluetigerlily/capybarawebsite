@@ -184,12 +184,32 @@ body {
     color: $darkblue;
     clip-path: circle(50% at 50% 50%);
     font-family: 'Poppins', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: (url('https://drive.google.com/uc?id=0B7QrEBMF4GTGQ3lfRzV0cU5rNHM'));
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    // animation-name: hue;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     background: linear-gradient(to top, rgba( 255, 255, 255, 0.1 )  0%, rgba( 255, 255, 255, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+
 }
+
+@keyframes hue {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
 
 .okayIpullup{
     position: absolute;
