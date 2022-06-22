@@ -40,7 +40,6 @@ body {
     overflow: hidden;
     justify-content: center;
     background-repeat: no-repeat;
-    z-index: 1;
 }
 @media (max-width: 2000px) { 
     .capybaracontainer {
@@ -232,8 +231,9 @@ body {
     height: 3rem;
     font-size: 1rem;
     padding: .2rem;
-    cursor: pointer !important;
+    cursor: pointer;
 }
+
 .partybutton:hover {
     color: $darkblue;
     background-color: lightblue;

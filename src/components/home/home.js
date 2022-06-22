@@ -4,15 +4,16 @@ import MyBackgroundImage from '../../assets/capybarabathtubsunglasses.png';
 import PartyTimeImage from '../../assets/partyreadycapybara.png';
 const Home = () => {
 
-    const [partyTime, setPartyTime] = useState(true);
-    const handleClick = (e) => {
+    const [isPartyTime, setIsPartyTime] = useState(true);
+    const handleClickParty = (e) => {
         e.preventDefault();
-        setPartyTime(!partyTime);
+        console.log(`I'm pressed`);
+        setIsPartyTime(!isPartyTime);
     }
     return (
     <>
        <div className='homeoutercontainer'> 
-     {partyTime ?   (<div className='capybaracontainer' 
+     {isPartyTime ?   (<div className='capybaracontainer' 
             style= {{
              backgroundImage: `url(${MyBackgroundImage})`  
         }}>
@@ -26,13 +27,14 @@ const Home = () => {
             <div className='hometitle'>
                 <h1>Capybara</h1>
                 <h2>After Party</h2>
-                <button
-                    className='partybutton' 
-                    onClick={handleClick}
-                    >
-                        
-                {partyTime ? 'Party Time?' : `Party's Over`}
-                </button> 
+
+                <button 
+                        className="partybutton"
+                        type="button"
+                        onClick={handleClickParty}
+                        >
+                    {isPartyTime ? `Party Time` : `After Party`}
+                </button>
             </div>
            
        </div> 
