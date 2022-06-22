@@ -104,15 +104,24 @@ $paleblue: #6b8cce;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 1rem;
+    font-size: smaller;
+    padding: 30%;
+    
 }
 .capybarabutton {
     background-image: url('../../assets/capybaraclicker.png');
     background-repeat: no-repeat;
-    width: 15rem;
-    height: 10rem;
+    width: 10rem;
+    height: 7rem;
     background-size: contain;
-    background-color: $paleblue;
-    border: .15rem solid $darkblue;
     border-radius: 1rem;
     cursor: pointer;
+    border: .15rem solid $darkblue;
+
+}
+
+.capybarabutton:active , .capybarabutton:hover {
+    border: .15rem solid $darkblue;
+    background-color: $paleblue;
 }
