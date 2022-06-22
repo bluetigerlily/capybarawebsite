@@ -49,10 +49,10 @@ body {
         background-position: -10rem 20rem;
     }
     .hometitle {
-        max-width: 30rem !important;
+        width: 30rem !important;
         font-size: 2rem !important;
-        max-height: 20rem !important;
-        margin-left: 50% !important;
+        height: 30rem !important;
+        margin-left: 60% !important;
         margin-top: 4% !important;
     }
 }
@@ -61,14 +61,22 @@ body {
         width: 100%;
         background-position: -1rem 25rem;
     }
+    .hometitle {
+        width: 20rem !important;
+        font-size: 1.3rem !important;
+        height: 20rem !important;
+        margin-left: 55% !important;
+        margin-top: 4% !important;
+    }
+
 }
 @media (max-width: 1300px) { 
 
     .hometitle {
-        max-width: 25rem !important;
+        min-width: 20rem !important;
         font-size: 1.3rem !important;
-        max-height: 15rem !important;
-        margin-left: 45% !important;
+        min-height: 20rem !important;
+        margin-left: 55% !important;
         margin-top: 4% !important;
     }
     .capybaracontainer {
@@ -86,10 +94,10 @@ body {
         background-position: -1rem 25rem;
     }
     .hometitle {
-        max-width: 20rem !important;
+        min-width: 20rem !important;
         font-size: 1rem !important;
-        max-height: 10rem !important;
-        margin-left: 40% !important;
+        min-height: 20rem !important;
+        margin-left: 55% !important;
         margin-top: 8% !important;
     }
 }
@@ -99,20 +107,20 @@ body {
         background-position: -1rem 19rem;
     }
     .hometitle {
-        max-width: 15rem !important;
+        width: 20rem !important;
         font-size: .8rem !important;
-        max-height: 8rem !important;
+        height: 20rem !important;
         margin-left: 55% !important;
-        margin-top: 10% !important;
+        margin-top: 5% !important;
     }
 }
 @media (max-width: 700px) {
     .hometitle {
-        max-width: 12rem !important;
+        width: 10rem !important;
         font-size: .8rem !important;
-        max-height: 8rem !important;
-        margin-left: 45% !important;
-        margin-top: 25% !important;
+        height: 10rem !important;
+        margin-left: 50% !important;
+        margin-top: 8% !important;
     }
     .capybaracontainer {
         width: 95%;
@@ -127,23 +135,61 @@ body {
         visibility: hidden !important;
     }
 }
+@media (max-width: 600px) {
+    .hometitle {
+        width: 10rem !important;
+        font-size: .8rem !important;
+        height: 10rem !important;
+        margin-left: 40% !important;
+        margin-top: 10% !important;
+    }
+    .okayIpullup:before {
+        visibility: hidden !important;
+    }
+}
+@media (max-width: 500px) {
+    .hometitle {
+        width: 8rem !important;
+        font-size: .8rem !important;
+        height: 8rem !important;
+        margin-left: 45% !important;
+        margin-top: 10% !important;
+    }
+    .okayIpullup:before {
+        visibility: hidden !important;
+    }
+}
+@media (max-width: 400px) {
+    .hometitle {
+        width: 8rem !important;
+        font-size: .8rem !important;
+        height: 8rem !important;
+        margin-left: 45% !important;
+        margin-top: 10% !important;
+    }
+    .okayIpullup:before {
+        visibility: hidden !important;
+    }
+}
 .hometitle {
     display: flex;
     flex-direction: column;
-    width: 35rem;
+    width: 15rem;
+    justify-content: center;
+    height: 15rem;
     margin-top: 2%;
     margin-left: 55%;
-    height: 28rem;
     justify-items: center;
-    align-items:center;
-    font-size: 2.9rem;
+    text-align: center;
+    align-items: center;
+    font-size: 1.9rem;
     color: $darkblue;
+    clip-path: circle(50% at 50% 50%);
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to top, rgba( 255, 255, 255, 0.1 )  0%, rgba( 255, 255, 255, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 1rem;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 

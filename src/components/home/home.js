@@ -9,8 +9,7 @@ const Home = () => {
         <div className='capybaracontainer'>
         </div>
         <div className='okayIpullup'></div>
-        <div className='bathtubcontainer'>      
-        </div>
+       
             <div className='hometitle'>
                 <h1>Capybara</h1>
                 <h2>After Party</h2>

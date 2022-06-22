@@ -24,9 +24,7 @@ const Community = () => {
             <div className='communitycontainter'>
           
                 <div className='communitycontainercolor'>
-                    <div className="accentline">
-                        
-                    </div>
+                    
                     <div className='communitycontainercolorvideotitle'>
                         <video
                             className="capyvideoclass"
@@ -39,9 +37,15 @@ const Community = () => {
                             src={capyvideo}
                             ref={videoEl}
                         />
+                        <div className="accentline">
+                        </div>
                         <div className="communitycontainercapybara">
                             Capybara Community
                         </div>
+                        
+                        <button className="startgamebutton">
+                            Start
+                        </button>
                     </div>
                 </div>
             </div>

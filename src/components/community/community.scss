@@ -23,44 +23,75 @@ $paleblue: #6b8cce;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 1rem;
+    min-height: 45rem;
+
 }
 .communitycontainercolor {
     width: 30vw;
-    height: 60vh;
+    height: 40rem;
     border-radius: 1rem 0rem 1rem 0rem;
     background-color: rgba(107, 140, 206, 1);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 40rem;
+    
+}
+.communitycontainercolorvideotitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1rem;
 }
 
 .accentline {
-    height: 25vh;
+    height: 0vh;
     margin-left: 1vw;
     margin-right: 1vw;
     width: 28vw;
-    position: absolute;
     border-bottom: .2rem solid $darkblue;
+    order: 1;
 }
 .communitycontainercapybara {
     width: 30vw;
-    height: 10vh;
+    height: 0vh;
     min-height: 6rem;
     min-width: 5rem;
     border-radius: 1rem 0rem 0rem 0rem;
     color: $darkblue;
-    text-align: center;
     padding: .1rem;
-    align-items: center;
-    justify-content: center;
     font-size: 4vw;
-
+    order: 2;
 }
 .capyvideoclass {
-    height: 20vh;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-    width: 25vw;
+    height: 25vh;
+    order: 0;
+    align-self: center;
+    align-items: center;
+    width: 28vw;
+    overflow: hidden;
     border-radius: 1rem;
-    margin: 1rem 2.5vw;
     outline: .2rem solid $darkblue;
+}
+
+.startgamebutton {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 1rem;
+    border: .15rem solid $darkblue;
+    color: $darkblue;
+    order: 3;
+
+    background-color: $lightblue;
+    cursor: pointer;
+}
+.startgamebutton:hover {
+    background-color: $darkblue;
+    color: $lightblue;
+    border: .15rem solid $lightblue;
+    cursor: pointer;
+
 }
