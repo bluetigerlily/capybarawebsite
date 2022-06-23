@@ -197,14 +197,15 @@ $paleblue: #6b8cce;
 }
 
 .capybarafactsdiv {
-    background-image: url('../../assets/hoodiebara.png');
-    width: 15rem;
-    height: 15rem;
+    background-image: url('../../assets/capybarafacts.png');
+    width: 20rem;
+    height: 10rem;
     align-self: flex-start;
     justify-self: start;
-    background-size: cover;
+    background-size: contain;
     border-radius: 0rem 1rem 0rem 0rem;
     background-repeat: no-repeat;
+    margin-top: 5vh;
 }
 .factstitle{
     justify-self: start;
