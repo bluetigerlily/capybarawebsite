@@ -7,15 +7,14 @@ $paleblue: #6b8cce;
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 94.8vh;
-    width: 99.8%;    
-    overflow: hidden;
+    height: 100%;
+    width: 100%;    
     
 }
 .communitycontainter {
     font-family: 'Poppins', sans-serif;
-    width: 80vw;
-    height: 85vh;
+    width: 95vw;
+    height: 100%;
     min-width: 5rem;
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to top, rgba( 255, 255, 255, 0.1 )  0%, rgba( 255, 255, 255, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%, rgba( 12, 52, 131, 0.25 )  100%);
@@ -25,28 +24,58 @@ $paleblue: #6b8cce;
     border-radius: 1rem;
     min-height: 45rem;
     display: flex;
-    column-gap: 1rem;
+    flex-direction: column;
 }
-
-.communitycontainercolor {
-    width: 30vw;
+.columncontainer {
+    display: flex;
+    flex-direction: row;
+}
+.columnone {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: cneter;
+    text-align: center;
+    flex-direction: column;
+}
+.columntwo {
+    width: 1vw;
     height: 40rem;
-    border-radius: 1rem 0rem 1rem 0rem;
-    background-color: rgba(107, 140, 206, 1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     min-height: 40rem;
-    
 }
+.columnthree {
+    width:64vw;
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: $darkblue;
+    min-height: 40rem;
+    background-color: $paleblue;
+    border-radius: 0rem 1rem 0rem 1rem;
+}
+.communitycontainercolor {
+    width: 30vw;
+    border-radius: 1rem 0rem 1rem 0rem;
+    background-color: rgba(107, 140, 206, 1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 40rem;
+}
+
 .communitycontainercolorvideotitle {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    row-gap: 1rem;
+    row-gap: 4rem;
 }
 
 .accentline {
@@ -59,22 +88,19 @@ $paleblue: #6b8cce;
 }
 .communitycontainercapybara {
     width: 30vw;
-    height: 0vh;
-    min-height: 6rem;
-    min-width: 5rem;
     border-radius: 1rem 0rem 0rem 0rem;
     color: $darkblue;
     padding: .1rem;
-    font-size: 4vw;
+    font-size: 3.2rem;
     order: 2;
 }
 .capyvideoclass {
-    height: 25vh;
+    height: 22vh;
     order: 0;
+    margin-top: 1rem;
     align-self: center;
     align-items: center;
     width: 28vw;
-    overflow: hidden;
     border-radius: 1rem;
     outline: .2rem solid $darkblue;
 }
@@ -86,7 +112,6 @@ $paleblue: #6b8cce;
     border: .15rem solid $darkblue;
     color: $darkblue;
     order: 3;
-
     background-color: $lightblue;
     cursor: pointer;
 }
@@ -104,10 +129,9 @@ $paleblue: #6b8cce;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 1rem;
-    width: 12rem;
+    width: 30vw;
     font-size: 1rem;
-    padding-right: 20%;
+    margin-bottom: 5%;
 }
 
 .capybarabutton {
@@ -120,13 +144,13 @@ $paleblue: #6b8cce;
     cursor: pointer;
 }
 
-.capybarabutton:active , .capybarabutton:hover {
-    background-color: $paleblue;
-}
 .box {
     animation: wobble 1s ease infinite;
 }
-.box:hover {
+.box:hover{
+    animation: none;
+}
+.box:focus {
     animation: none;
 }
 
@@ -163,4 +187,36 @@ $paleblue: #6b8cce;
         -webkit-transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
         transform: translateX(calc(-32px / 5.5)) rotate(calc(-10deg / 5));
     }
+}
+.capybaratitlecontainer {
+    display: flex;
+    width: 64vw;
+    text-align: center;
+    column-gap: 5vw;
+
+}
+
+.capybarafactsdiv {
+    background-image: url('../../assets/hoodiebara.png');
+    width: 15rem;
+    height: 15rem;
+    align-self: flex-start;
+    justify-self: start;
+    background-size: cover;
+    border-radius: 0rem 1rem 0rem 0rem;
+    background-repeat: no-repeat;
+}
+.factstitle{
+    justify-self: start;
+    align-self: flex-start;
+    font-size: 3.6vw;
+}
+.capyfactscontainer {
+    display: flex;
+    text-align: left;
+    width: 100%;
+}
+.capyfacts {
+    align-self: flex-start;
+    text-align: left;
 }

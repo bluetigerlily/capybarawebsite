@@ -7,8 +7,9 @@ $myyellow: #EAF9D9;
 
 
 body {
+    
     background: linear-gradient(-45deg, $darkblue, $lightblue, $paleblue);
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     height: 100vh;
     padding: 0;
@@ -16,7 +17,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
 }
 
 @keyframes gradient {
@@ -40,6 +40,7 @@ body {
     overflow: hidden;
     justify-content: center;
     background-repeat: no-repeat;
+
 }
 @media (max-width: 2000px) { 
     .capybaracontainer {
@@ -245,6 +246,7 @@ body {
     font-size: 1rem;
     padding: .2rem;
     cursor: pointer;
+    
 }
 
 .partybutton:hover {

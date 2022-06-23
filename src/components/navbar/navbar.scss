@@ -9,6 +9,7 @@ $paleblue: #6b8cce;
     font-size: 2rem;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -18,6 +19,7 @@ a {
     margin-left: 4rem;
     padding-left: .5rem;
     padding-right: .5rem;
+
 }
 a:hover {
     outline: .17rem solid $darkblue;
@@ -27,4 +29,5 @@ a:hover {
 .linkcontainer {
     display: flex;
     column-gap: 2rem;
+    // background-color: rgba(0, 0, 0, 0.2);
 }

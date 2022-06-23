@@ -29,11 +29,13 @@ const Community = () => {
     return (
 
         <div className='communityoutercontainer'>
-
+        
+     
             <div className='communitycontainter'>
+                <div className="columncontainer">
+            <div className="columnone">
 
                 <div className='communitycontainercolor'>
-
                     <div className='communitycontainercolorvideotitle'>
                         <video
                             className="capyvideoclass"
@@ -59,12 +61,34 @@ const Community = () => {
                             >
                             {isStarted ? 'Start' : 'Stop'}
                         </button>
+                        
+                    </div>
+                    
+                   </div> 
+                   {isStarted ? '' :  <Clicker /> }
+                </div>
+                   <div className="columntwo">
+                   </div>
+                    <div className="columnthree">
+                        <div className="capybaratitlecontainer">
+                            <div className="capybarafactsdiv">
+                            </div>
+                            <div className="factstitle">
+                                <p>Facty'Baras</p>
+                            </div>
+                        </div> 
+                        <div className="capyfactscontainer">
+                            <ul className="capyfacts">
+                                <li>Capybaras are the Dankest Aquatic Land Rodent</li>
+                                <li>Capybaras are Chill with Everyone</li>
+                                <li>Favorite Drinks include Henny & Coconut Bicardi</li>
+                                <li>Coconut-doggy is a Term of Great Endearment and should only be used for your Best Capy Homies</li>
+                            </ul>
+                        </div> 
                     </div>
 
 
-                </div>
-                {isStarted ? '' :  <Clicker /> }
-
+            </div>
             </div>
         </div>
     );
