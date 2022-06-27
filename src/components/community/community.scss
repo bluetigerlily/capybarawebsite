@@ -222,3 +222,27 @@ $paleblue: #6b8cce;
     text-align: left;
     font-size: 3vh;
 }
+@media (max-width: 900px) {
+    .capyfacts {
+        font-size: 1.5rem !important;
+    }   
+    .communitycontainercapybara  {
+        font-size: 2rem !important;
+    }
+}
+@media (max-width: 1000px) {
+    .capyfacts {
+        font-size: 1.4rem !important;
+    }   
+    .communitycontainercapybara  {
+        font-size: 5vw !important;
+    }
+}
+@media (max-width: 1500px) {
+    .capyfacts {
+        font-size: 1.8rem;
+    }   
+    .communitycontainercapybara  {
+        font-size: 4vw;
+    }
+}
