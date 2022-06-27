@@ -27,7 +27,7 @@ const Home = () => {
         <div className='okayIpullup'></div>
        
         {isPartyTime ? (<div className='hometitle'>
-                <h1>Capybara</h1>
+                <h1>Capy<span>bar</span>a</h1>
                 <h2>After Party</h2>
 
                 <button 

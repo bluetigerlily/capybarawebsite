@@ -182,7 +182,6 @@ body {
     text-align: center;
     align-items: center;
     font-size: 1.9rem;
-    color: $darkblue;
     clip-path: circle(50% at 50% 50%);
     font-family: 'Poppins', sans-serif;
     background-size: cover;
@@ -192,9 +191,18 @@ body {
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-
 }
-
+.hometitle h1 {
+    color: $darkblue;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1rem $lightblue, 0 0 0.5em $darkblue, 0 0 0.1rem $darkblue;
+}
+.hometitle h2 {
+    color: $darkblue;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1rem $lightblue, 0 0 0.5rem $darkblue, 0 0 0.1rem #9D00FF;
+}
+.hometitle h1 span{
+    animation: blink linear infinite 2s;
+}
 @keyframes hue {
     from {
       filter: hue-rotate(0deg);
@@ -253,3 +261,38 @@ body {
     color: $darkblue;
     background-color: lightblue;
 }
+
+@keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: $myyellow;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: $myyellow;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: $myyellow;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+  
